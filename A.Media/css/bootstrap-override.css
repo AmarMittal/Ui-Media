@@ -224,13 +224,10 @@ footer{
   opacity: 0.5;
   filter: alpha(opacity=50);
 }
-
 .carousel-control.right {
     left: auto;
     right: 28px;
 }
-
-
 .innerContent{
     margin: 15px; 
     padding-bottom: 15px; 
@@ -254,18 +251,4 @@ footer{
     float: right;
     min-height: 30px;
     width: 150px;
-}
-
-.pagging{
-    display:block; 
-    text-align: center; 
-    padding-bottom: 10px;
-}
-.pagging a{
-    background: #045abc; 
-    width: 20px; height: 20px; 
-    border-radius: 20px; 
-    color: #fff; 
-    display:inline-block; 
-    text-decoration: none;
 }
