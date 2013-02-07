@@ -1,0 +1,211 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="web design, website development, web application development, print design, database development, ecommerce websites, search engine optimization, packaging design" />
+<meta name="description" content="Tutorial demo showing how to add jquery animated validation to any form" />
+<meta name="robots" content="all" />
+<title>jQuery Form Validation With Animated Error Messages Demo</title>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+
+<script type="text/JavaScript">
+$(document).ready(function() { 
+
+	$('.btn-submit').click(function(e){
+	
+		// Declare the function variables:
+		// Parent form, form URL, email regex and the error HTML
+		var $formId = $(this).parents('form');
+		var formAction = $formId.attr('action');
+		var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+		var $error = $('<span class="error"></span>');
+
+		// Prepare the form for validation - remove previous errors
+		$('li',$formId).removeClass('error');
+		$('span.error').remove();
+
+		// Validate all inputs with the class "required"
+		$('.required',$formId).each(function(){
+			var inputVal = $(this).val();
+			var $parentTag = $(this).parent();
+			if(inputVal == ''){
+				$parentTag.addClass('error').append($error.clone().text('Required Field'));
+			}
+			
+			// Run the email validation using the regex for those input items also having class "email"
+			if($(this).hasClass('email') == true){
+				if(!emailReg.test(inputVal)){
+					$parentTag.addClass('error').append($error.clone().text('Enter valid email'));
+				}
+			}
+			
+			// Check passwords match for inputs with class "password"
+			if($(this).hasClass('password') == true){
+				var password1 = $('#password-1').val();
+				var password2 = $('#password-2').val();
+				if(password1 != password2){
+				$parentTag.addClass('error').append($error.clone().text('Passwords must match'));
+				}
+			}
+		});
+
+		// All validation complete - Check if any errors exist
+		// If has errors
+		if ($('span.error').length > 0) {
+			
+			$('span.error').each(function(){
+				
+				// Set the distance for the error animation
+				var distance = 5;
+				
+				// Get the error dimensions
+				var width = $(this).outerWidth();
+				
+				// Calculate starting position
+				var start = width + distance;
+				
+				// Set the initial CSS
+				$(this).show().css({
+					display: 'block',
+					opacity: 0,
+					right: -start+'px'
+				})
+				// Animate the error message
+				.animate({
+					right: -width+'px',
+					opacity: 1
+				}, 'slow');
+				
+			});
+		} else {
+			$formId.submit();
+		}
+		// Prevent form submission
+			e.preventDefault();
+	});
+	
+	// Fade out error message when input field gains focus
+	$('.required').focus(function(){
+		var $parent = $(this).parent();
+		$parent.removeClass('error');
+		$('span.error',$parent).fadeOut();
+	});
+});
+</script>
+
+<style type="text/css">
+body,html,div,blockquote,img,label,p,h1,h2,h3,h4,h5,h6,pre,ul,ol,li,dl,dt,dd,form,a,fieldset,input,th,td{border:0;outline:none;margin:0;padding:0;}
+body{height:100%;background:#fff;color:#1f1f1f;font-family:Arial,Verdana,sans-serif;font-size:13px;padding:7px 0;}
+ul, ol{list-style:none;}
+.text-center {text-align: center; padding: 10px 0;}
+.wrap {width: 960px; margin: 0 auto;}
+
+/* Tutorial CSS */
+/*Form styles*/
+.styled {
+font: 15px Arial, sans-serif; 
+width: 422px; 
+margin: 40px auto; 
+background: url(images/bg_form.png) no-repeat 0 0; 
+padding-top: 20px;
+}
+.styled fieldset {
+background: url(images/bg_form.png) no-repeat 0 100%; 
+padding: 0 25px 20px 25px; 
+position: relative;
+}
+.styled fieldset h3 { 
+font: 24px bold Arial, sans-serif; 
+color: #555;
+margin-bottom: 0.5em;
+}
+/* Form rows */
+.styled fieldset li.form-row {
+margin-bottom: 5px; 
+padding: 3px 0; 
+clear: both; 
+position: relative;
+}
+.styled label {
+display: block; 
+font-weight: bold; 
+float: left; 
+width: 100px; 
+line-height: 24px; 
+padding-top: 4px; 
+color: #555;
+}
+.styled label.double {
+padding-top: 0; 
+line-height: 20px; 
+margin-top: -3px;
+}
+.styled fieldset li.button-row {
+margin-bottom: 0; 
+padding: 5px 0 0; 
+text-align: right;
+}
+/* Text input styles */
+/* Default */
+.styled input.text-input {
+height: 22px;
+width: 254px;
+padding: 5px 8px; 
+background: url(images/bg_input.png) no-repeat 0 0;  
+border: none;   
+font: normal 15px Arial, sans-serif;
+color: #333;
+line-height: 1em;
+}
+
+/* Form Validation */
+.styled span.error {
+font: bold 11px Arial, sans-serif;
+color:#fff;
+text-shadow: 1px 1px 1px #000;
+display: none; 
+background: url(images/arrow_error.png) no-repeat 0 center; 
+height: 11px;
+padding: 7px 15px 10px 20px; 
+line-height: 1em; 
+position: absolute; 
+top: 3px; 
+right: 0; 
+border-right: 1px solid #6c0202;
+}
+.styled fieldset li.error input.text-input {
+background-position: 0 -64px;
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h2 class="text-center">jQuery Validation With Animated Error Messages</h2>
+	   
+          <form id="form-sign-up" class="styled" action="" method="post">
+	  	    <fieldset>
+			  <h3>Register Now!</h3>
+			  <ol>
+			    <li class="form-row"><label>Name:</label>
+				  <input name="name" type="text" class="text-input required" />
+				</li>
+				<li class="form-row"><label>Email:</label>
+				  <input name="email" type="text" id="register-email" class="text-input required email" />
+				</li>
+				<li class="form-row"><label>Password:</label>
+				  <input name="password" type="password" id="password-1" class="text-input required password" />
+				</li>
+				<li class="form-row"><label>Repeat Password:</label>
+				  <input name="password" type="password" id="password-2" class="text-input required password" />
+				</li>
+				<li class="button-row">
+				  <input type="image" src="images/btn_sign_up_off.png" alt="Sign Up" value="OK" class="btn-submit img-swap" />
+				</li>
+			  </ol>
+			</fieldset>
+		  </form>
+         
+		  
+	  </div>
+</body>
+</html>

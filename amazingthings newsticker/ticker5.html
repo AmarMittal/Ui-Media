@@ -1,0 +1,62 @@
+<style type="text/css">
+
+.myMarquee {width:500px; height:40px; overflow:hidden; position:relative; border:1px solid #aaa;
+-o-box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+-moz-box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+-webkit-box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+
+-o-border-radius: 8px;
+-moz-border-radius: 8px;
+-webkit-border-radius: 8px;
+border-radius: 8px;
+
+background:#4ad;
+background-image: -webkit-gradient(linear, 0% 0%, 0% 95%, from(rgba(255, 255, 255, 0.7)), to(rgba(255, 255, 255, 0)));
+background-image: -moz-linear-gradient(-90deg, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0));
+
+}
+.scroller {display:block; width:1240px; height:40px; position:absolute; left:0; top:0;
+-moz-animation-iteration-count: infinite;
+-moz-animation-timing-function: linear;
+-moz-animation-duration:10s;
+-moz-animation-name: scroll;
+-webkit-animation-iteration-count: infinite;
+-webkit-animation-timing-function: linear;
+-webkit-animation-duration:10s;
+-webkit-animation-name: scroll;
+}
+.scroller div {font-family:georgia, serif; font-size:16px; line-height:40px; float:left; width:600px; color:#000; font-weight:bold; padding:0 10px; 
+}
+.scroller div a {color:#c00;}
+
+@-moz-keyframes scroll {
+0% {left:0;}
+100% {left:-620px;}
+}
+
+.scroller:hover {
+ -moz-animation-play-state: paused;
+ }
+
+
+@-webkit-keyframes scroll {
+0% {left:0;}
+100% {left:-620px;}
+}
+
+.scroller:hover {
+ -webkit-animation-play-state: paused;
+ }
+
+</style>
+
+<div class="myMarquee">
+	<div class="scroller">
+		<div>An auto-running 'Marquee' with 'hover' to stop the scroll, with <a href="#x">links</a>.</div>
+		<div>An auto-running 'Marquee' with 'hover' to stop the scroll, with <a href="#x">links</a>.</div>
+	</div>
+</div>
+
+
+<!-- --><script type="text/javascript" src="http://static.websimages.com/static/global/js/webs/usersites/escort.js"></script><script type="text/javascript">if(typeof(urchinTracker)=='function'){_uacct="UA-230305-2";_udn="none";_uff=false;urchinTracker();}</script>

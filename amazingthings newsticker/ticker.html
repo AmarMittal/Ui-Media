@@ -1,0 +1,48 @@
+
+<html>
+<head>
+	<title></title>
+	
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+	
+	<script type="text/javascript" src="http://assanka.net/content/tech/files/2010/05/jquery.ticker.js"></script>
+	<style type='text/css'>
+	#ticker1 { top: 0; font-size: 25px;background:black;color:white; }
+	#ticker2 { top: 40;background:black;color:white; }
+	.ticker { margin:0; padding: 0; width: 100%; height: 40px; font-family: Arial, Helvetica; font-size: 30px; position: absolute; }
+	.ticker li { float:left; padding-right: 40px }
+	.up { color: #00FF00 }
+	.down { color: #FF0033 }
+	</style>
+	
+	<script type='text/javascript'>
+	var ticker, stories;
+    
+   	$(function() {
+		ticker = $('#ticker1').ticker({pxpersec:180});
+		$('#ticker2').ticker({pxpersec:120});
+			
+	});
+	
+	</script>
+</head>
+<body>
+<div id='ticker1' class="ticker">
+<ul>
+<li>Dhama Initiative: 986 </li>
+<li>Acme Corporation: 2,561,777 </li>
+<li>Jupiter Mining Corporation: 84,193 </li>
+<li>Wayne Enterprises: 17,234 </li>
+<li>Universal Exports: 1,469,046 </li>
+</ul>
+</div>
+<div id='ticker2' class="ticker">
+<ul>
+<li>Dhama Initiative: 986 <span class="up">&#9650; 74.9%</span></li>
+<li>Acme Corporation: 2,561,777 <span class="down">&#9660; 0.2%</span></li>
+<li>Jupiter Mining Corporation: 84,193 <span class="down">&#9660; 1.8%</span></li>
+<li>Wayne Enterprises: 17,234 <span class="up">&#9650; 3.4%</span></li>
+<li>Universal Exports: 1,469,046 <span class="up">&#9650; 17.2%</span></li>
+</ul>
+</div>
+</div>

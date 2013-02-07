@@ -1,0 +1,49 @@
+<html>
+	<head>
+		<title>Carousel Demo1</title>
+		<!-- Meta Part Add Here---->
+		<meta charset="utf-8">
+		<meta name="author" content="Amar Mittal">
+		<!-- Fevicon Part Add Here---->
+		<link rel="shortcut icon" href="image/favicon.ico" size="16*16">
+		<!-- StyleSheet Add Here---->
+		<link href="css/style.css" rel="stylesheet">
+		<!-- JavaScript Add Here---->
+		<script type="text/javascript" src="js/Libraries.js"></script>
+		<script type="text/javascript" src="js/silder.js"></script>
+	</head>
+	<body>
+		<!-- Carousel Start Here -->
+		<div class="carousel">
+			<div class="button">
+				<a href="#" class="prev">prev</a>
+				<a href="#" class="next">next</a>
+				<div class="clear"></div>
+			</div>
+			<div class="sildes">
+				<ul>    
+					<li><a href = "javascript:void(0)" onclick = "document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'"><img src="./image/sildes1.jpg" width="490" alt="Slide 1"/></a></li>
+					<li><a href = "javascript:void(1)" onclick = "document.getElementById('light1').style.display='block';document.getElementById('fade').style.display='block'"><img src="./image/sildes2.jpg" width="490" alt="Slide 2"/></a></li>
+					<li><a href = "javascript:void(2)" onclick = "document.getElementById('light2').style.display='block';document.getElementById('fade').style.display='block'"><img src="./image/sildes3.jpg" width="490" alt="Slide 3"/></a></li>
+				</ul>
+				<div class="clear"></div>
+			</div>
+		</div>
+		<!-- Carousel Part End Here---->
+		<!-- LightBox Part Start Here---->
+		<div id="light" class="white_content">
+			<img src="./image/sildes1.jpg" width="490" height="500" alt="Slide 1"/>
+			<a href = "javascript:void(0)" onclick = "document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'">Close</a>
+		</div>
+		<div id="light1" class="white_content">
+			<img src="./image/sildes2.jpg" width="490" height="500" alt="Slide 1"/>
+			<a href = "javascript:void(1)" onclick = "document.getElementById('light1').style.display='none';document.getElementById('fade').style.display='none'">Close</a>
+		</div>
+		<div id="light2" class="white_content">
+			<img src="./image/sildes3.jpg" width="490" height="500"alt="Slide 1"/>
+			<a href = "javascript:void(2)" onclick = "document.getElementById('light2').style.display='none';document.getElementById('fade').style.display='none'">Close</a>
+		</div>
+		<div id="fade" class="black_overlay"></div>
+		<!-- LightBox Part End Here---->
+	</body>
+</html>

@@ -1,0 +1,98 @@
+.container{
+	width:900px;
+	margin:30px auto;
+	padding:25px;
+	min-height:400px;
+	height:auto;
+	background:#FFF;	
+}
+.container h2 { margin-top:30px;}
+a, a:hover { 
+	text-decoration:none; 
+}
+
+.nav_exmaple {
+	background:#777;
+	padding:100px 0 50px 0;
+}
+nav {
+     font-family: arial, sans-serif;
+     position: relative;
+     font-size:14px;
+     color:#333;
+     margin: 0px auto;
+}
+ 
+nav ul {
+     list-style-type: none;
+     border-bottom:4px solid #FFF;
+     margin: 0;
+}
+ 
+nav ul li {
+     float: left;
+     position: relative;
+     top:-38px;
+}
+ 
+nav ul li a {
+    text-align: center;
+    padding:10px 25px;
+    display:block;
+    text-decoration:none;
+    color:#FFF;
+    font-weight:bold;
+    text-shadow:-1px 0px 0px #bbb;
+    margin:0px 1px;
+    background: #d1dfe8;
+	background: -moz-linear-gradient(top, #d1dfe8 0%, #98c1d3 44%, #8ab9cd 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#d1dfe8), color-stop(44%,#98c1d3), color-stop(100%,#8ab9cd));
+	background: -webkit-linear-gradient(top, #d1dfe8 0%,#98c1d3 44%,#8ab9cd 100%); 
+	background: -o-linear-gradient(top, #d1dfe8 0%,#98c1d3 44%,#8ab9cd 100%); 
+	background: -ms-linear-gradient(top, #d1dfe8 0%,#98c1d3 44%,#8ab9cd 100%); 
+	background: linear-gradient(top, #d1dfe8 0%,#98c1d3 44%,#8ab9cd 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d1dfe8', endColorstr='#8ab9cd',GradientType=0 );
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	-moz-border-top-left-radius: 5px;
+	-moz-border-top-right-radius: 5px;
+	-webkit-border-top-left-radius: 5px;
+	-webkit-border-top-right-radius: 5px;
+}
+nav ul li:hover > a {
+	background:#FFF;
+	color:#333;
+	text-shadow:none;
+}
+nav ul li ul {
+     display: none
+}
+ 
+nav ul li:hover ul {
+     display: block;
+     position: absolute;
+     top:76px;
+     left:-1px;
+     padding:0;
+     margin:0;
+     width:auto;
+     border:0;
+}
+nav ul li:hover ul li a {
+     display:block;
+     background:#FFF;
+     color:#333;
+     text-align: center;
+     border: 1px solid #999;
+     border-top: none;
+     border-radius: 0;
+     -moz-border-radius: 0;
+     -webkit-border-radius: 0;
+     font-weight:normal;
+     width:120px;
+}
+ 
+nav ul li:hover ul li a:hover, nav ul li a:hover {
+	background:#FFF;
+    color:#333;
+}

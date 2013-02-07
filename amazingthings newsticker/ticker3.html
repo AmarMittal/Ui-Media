@@ -1,0 +1,132 @@
+
+<!doctype html>
+<head>
+<meta charset="utf-8" />
+<title>Workshop.rs: News Ticker in 4 lines of jQuery</title>
+
+<style>
+html, body {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	line-height: 16px;
+	padding: 0;
+	margin: 0;
+	color: #333;
+}
+
+a { color: #141478; text-decoration: none; }
+a:hover { color: #0099ff; }
+
+
+
+h1, h2 {
+	font-family: 'IM Fell DW Pica SC', Helvetica, Arial, sans-serif;
+	font-weight: normal;
+}
+
+h1 {
+	font-size: 35px;
+
+}
+.highlight {
+	font-size: 50px;
+	color: #0099ff;
+}
+h1, h2 {
+	color: #333;
+	text-align: center;	
+}
+h2{
+	text-align: right;
+	padding: 10px 0px;
+}
+
+.bar {
+	background-color: #111;
+	color: #f0f0f0;
+	box-shadow: 0px 0px 2px #333;
+	line-height: 25px;
+	padding: 0px 20px;
+}
+.bar a {
+	color: #DDD;
+}
+.bar a:hover {
+	color: #FFFFFF;
+}
+
+.ticker {
+	width: 500px;
+	height: 40px;
+	overflow: hidden;
+	border: 1px solid #DDD;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	border-radius: 5px;
+	box-shadow: 0px 0px 5px #DDD;
+}
+
+#ticker_02 {
+	height: 120px;
+}
+
+.ticker li {
+	height: 30px;
+	border-bottom: 1px dotted #DDD;
+	padding: 5px;
+	margin: 0px 5px;
+}
+
+#ticker_04 {
+	height: 150px;
+}
+#ticker_04 li {
+	height: 40px;
+	overflow: hidden;
+} 
+#ticker_04 img {
+	float: left;
+	height: 40px;
+	width: 40px;
+	margin-right: 10px;
+} 
+
+#example_4 { display: none;}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+<link href='http://fonts.googleapis.com/css?family=IM+Fell+DW+Pica+SC' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+<div id="page">
+
+	<ul id="ticker_01" class="ticker">
+		<li>
+			<a href="http://workshop.rs/2009/12/jqbargraph-jquery-graph-plugin/">jqBarGraph</a> is jQuery plugin that gives you freedom to easily display your data as graphs. There are three types of graphs: simple, multi and stacked.
+		</li>
+		<li>
+			Learn how to create <a href="http://workshop.rs/2010/07/create-image-gallery-in-4-lines-of-jquery/">image gallery in 4 lines of Jquery</a>
+		</li>
+		<li>
+			<a href="http://workshop.rs/2009/12/image-gallery-with-fancy-transitions-effects">jqFancyTransitions</a> is easy-to-use jQuery plugin for displaying your photos as slideshow with fancy transition effects.
+		</li>
+		<li>
+			<a href="http://workshop.rs/2010/02/moobargraph-ajax-graph-for-mootools/">mooBarGraph</a> is AJAX graph plugin for MooTools which support two types of graphs, simple bar and stacked bar graph.
+		</li>
+	</ul>
+
+
+	
+
+<script>
+
+	function tick(){
+		$('#ticker_01 li:first').slideUp( function () { $(this).appendTo($('#ticker_01')).slideDown(); });
+	}
+	setInterval(function(){ tick () }, 1500);
+
+</script>
+
+<!-- --><script type="text/javascript" src="http://static.websimages.com/static/global/js/webs/usersites/escort.js"></script><script type="text/javascript">if(typeof(urchinTracker)=='function'){_uacct="UA-230305-2";_udn="none";_uff=false;urchinTracker();}</script></body>
+</html>

@@ -1,0 +1,129 @@
+body{
+	font-family: Verdana;
+	margin: 0;
+
+}
+.page{
+	width:100%;
+}
+header{
+	margin:0 auto;
+}
+.innerTopHeader{
+	background-color: #3fa757;
+	height: 7px;
+	position: relative;
+	z-index: 999;
+}
+.top{
+	width: 960px;
+	margin: 0 auto;
+}
+.topLogo{
+	background: url("../image/Titleimg.png") no-repeat scroll center center transparent;
+    height: 131px;
+    left: 44%;
+    margin: 0 auto;
+    position: absolute;
+    width: 122px;
+}
+.topLogo a{
+	 color: #FFFFFF;
+    float: left;
+    margin: 78px 0 1px 38px;
+    text-decoration: none;
+}
+.innerMiddleHeader{
+	background-color:#333333;
+	height: 50px;
+}
+.logo{
+	float: left;
+    left: 127px;
+    min-height: 150px;
+    position: absolute;
+    width: 200px;
+	}
+.logo img{width:65%;}
+
+.innerBottomHeader{
+	background-color: #c0c0c0;
+	height: 40px;
+}
+.contain{
+	background: url("../image/contain_bg.png") repeat-x;
+	height: 500px
+}
+.loginForm{
+	width:960px;
+	margin: 0 auto;
+}
+h1{
+	color: #333333;
+    margin: 0;
+    padding: 50px 10px 0 28px;
+}
+h5{
+	font-size: 15px;
+	color: #fff;
+	margin: 0;
+	text-align: center;
+}
+.cmxform{
+	width:463px;
+	margin: 10px 0 0 25px;
+}
+label { 
+	width: 90px; 
+	float: left;
+ }
+
+.form{
+	padding: 0;
+	margin-top: 25px;
+}
+.form li{
+	float:left;
+	list-style:none;
+	padding: 0 10px 10px;
+	position: relative;
+}
+input,textarea{
+	margin-left: 30px;
+}
+textarea{width:173px;}
+.submit { 
+	background: url("../image/btn.png") no-repeat scroll 0 0 transparent;
+    border: medium none;
+    height: 38px;
+    margin-left: 8em;
+    width: 100px;
+    color: #fff;
+    font-weight: bold;
+    }
+ .cancel{
+ 	background: url("../image/btn.png") no-repeat scroll 0 0 transparent;
+    border: medium none;
+    height: 38px;
+    margin-left: -1em;
+    width: 100px;
+    color: #fff;
+    font-weight: bold;
+ }
+label.error{
+   	background: url("../image/arrow_error.png") no-repeat scroll 0 -1px transparent;
+	color: #fff;
+	font-size: 12px;
+	height: 34px;
+	text-align: center;
+	width: 250px;
+	position: absolute;
+	padding: 5px 0 0 5px;
+	font-weight: bold;
+}
+footer{
+	background-color: #333333;
+	height: 80px;
+}
+
+

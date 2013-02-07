@@ -1,0 +1,117 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+	<title></title>
+	
+	
+    <style type="text/css">
+    /* CSS Reset (Eric Meyer) */
+    html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent;margin:0;padding:0}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}:focus{outline:0}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}
+    
+    
+body {
+    background: #000 url(citylights_medium.jpg) no-repeat;
+    font: 12px Arial, Helvetica, sans-serif;
+}
+    
+#nav {
+    margin: 50px;
+    z-index: 10;
+    display: block;
+}
+    #nav li { float: left; }
+        #nav li:hover { position: relative }
+        #nav li:hover > a { 
+            background: #021A1A; 
+            
+            box-shadow: 5px 5px 25px #000;
+            -moz-box-shadow: 5px 5px 25px #000;
+            -webkit-box-shadow: 5px 5px 25px #000;
+    
+            border-radius: 10px;
+            -moz-border-radius: 10px;
+            -webkit-border-radius: 10px;                  
+        }
+            #nav li.sub:hover > a {
+                border-radius: 10px 10px 0 0;
+                -moz-border-radius: 10px 10px 0 0;
+                -webkit-border-radius: 10px 10px 0 0;        
+            }
+
+            #nav li a {
+                color: #fff;
+                font-weight: bold;
+                text-decoration: none;
+                padding: 12px;
+                display: block;
+            }
+                #nav li a:hover { background-color: #021A1A; }        
+                    
+    #nav li ul { 
+        background: #fff;
+        margin-top: -2px;
+        display: none;   
+    }
+        #nav li:hover ul {
+            display:block; 
+            position:absolute; 
+        }
+
+        #nav li ul {
+            background: rgba(255,255,255,0.5);
+            padding: 10px 5px;
+            
+            box-shadow: 5px 5px 25px #000;
+            -moz-box-shadow: 5px 5px 25px #000;
+            -webkit-box-shadow: 5px 5px 25px #000;
+            
+            border-radius: 0px 15px 15px 15px;
+            -moz-border-radius: 0px 15px 15px 15px;
+            -webkit-border-radius: 0px 5px 5px 5px;
+        }
+            #nav li ul li a, #nav li ul li a:hover {
+                background: transparent;
+                color: #000;
+                width: 150px;
+                font-size: 0.95em;
+                font-weight: normal;
+            }
+                #nav li ul li a:hover { text-decoration: underline; 
+                    box-shadow: none;
+                    -moz-box-shadow: none;
+                    -webkit-box-shadow: none;
+                            
+                    border-radius: 0;
+                    -moz-border-radius: 0;
+                    -webkit-border-radius: 0;
+                }
+
+    </style>	
+</head>
+<body>
+		<ul id="nav">
+			<li><a href="#">Home</a></li>
+			<li><a href="#">About</a></li>
+			<li class="sub"><a href="#">Products</a>
+                <ul>
+                	<li><a href="#">Product 1</a></li>
+                	<li><a href="#">Product 2</a></li>
+                	<li><a href="#">Product 3</a></li>
+                	<li><a href="#">Product 4</a></li>
+                	<li><a href="#">Product 5</a></li>
+                </ul>
+            </li>
+			<li class="sub"><a href="#">Services</a>
+                <ul>
+                	<li><a href="#">Service 1</a></li>
+                	<li><a href="#">Service 2</a></li>
+                	<li><a href="#">Service 3</a></li>
+                	<li><a href="#">Service 4</a></li>
+                	<li><a href="#">Service 5</a></li>
+                </ul>
+            </li>
+			<li><a href="#">Contacts</a></li>
+		</ul>
+</body>
+</html>

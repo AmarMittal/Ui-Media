@@ -1,0 +1,85 @@
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) { 
+
+	.navbar-inner{
+		float: left;
+	}
+	.navbar .btn-navbar{
+		float: left; 
+		margin-bottom: 10px; 
+		border-radius: 3px 3px 3px 3px;
+	}
+	.socialLinks li{
+		width: 20%;
+	}
+	.navbar .nav > li > a{
+		background: #fff; 
+		width: 73%; 
+		text-align: center;
+	}
+	.navbar .nav > li{
+		line-height: 40px;
+	}
+ }
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+	body {
+		padding-left: 27px; 
+		padding-right: 27px;
+	} 
+	.navbar .nav > li > a{
+		background: #fff; 
+		width: 73%; 
+		text-align: center;
+	}
+	.navbar .nav > li{
+		line-height: 40px;
+	}
+	.navbar-inner{
+		float: left;
+	}
+	.navbar .btn-navbar{
+		float: left; 
+		margin-bottom: 10px; 
+		border-radius: 3px 3px 3px 3px;
+	}
+	.footerSec{
+		padding: 0px 15px;
+	}
+	.menu li{
+		width: 93%;
+	}
+	.business {
+		display: table-row-group; 
+		padding: 0; 
+		width: 100%;
+	}
+	.business p {
+		float: right; 
+		width: 48%; 
+		margin-top: 10px;
+	}
+	.business span{
+		float: left;
+	}
+	.business .btn{
+		margin-top: 60px;
+	}
+	.socialLinks li{
+		width: 5%;
+	}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+	.business p{
+		width: 100%;
+	}
+	.business .btn{
+		margin-top: 0px;
+	}
+	.socialLinks li{
+		width: 11%;
+	}
+
+}

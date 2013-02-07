@@ -1,0 +1,108 @@
+body{
+	font-size:18px;
+	font-family: sans-serif;
+	color:#000;
+}
+.page{
+	width:100%;
+	float:left;
+	margin: 0 auto;
+}
+.header{
+	width:100%;
+	float:left;
+}
+.headerBody{
+	width:980px;
+	margin:0 auto;
+}
+.contain{
+	width:100%;
+	float:left;
+}
+.containBody{
+	width:980px;
+	margin:0 auto;
+}
+.carousel{
+	width:500px;
+	min-height: 500px;
+	margin: 0 auto;
+	border-radius: 5px; 
+	border:2px solid grey;
+    background-color: lightgrey
+}
+.button {
+    padding:0 0 5px 0;  
+    float:right;
+}
+ 
+.button a {
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    display: block;
+    float: left;
+    height: 32px;
+    margin: 3px 0 0 5px;
+    outline: 0 none;
+    text-indent: -999em;
+    width: 26px;
+}
+ 
+a.prev {
+    background:url(../image/button.gif) 0 0 no-repeat; 
+}
+ 
+a.prev:hover {
+    background:url(../image/button.gif) 0 -26px no-repeat;
+}
+ 
+a.next {
+    background:url(../image/button.gif) -32px 0 no-repeat; 
+}
+ 
+a.next:hover {
+    background:url(../image/button.gif) -32px -26px no-repeat;
+}
+.clear {clear:both}
+.sildes{
+	position:relative;
+    width:500px;
+    height:500px;
+    border:1px solid black;
+    background-color: #fff;
+
+    overflow:hidden;
+}
+.sildes ul {
+    position:relative;
+    left:0;
+    top:0;
+    list-style:none;
+    margin:0;
+    padding:0;  
+           
+}
+ 
+.sildes li {
+  
+    height:500px;   
+    float:left;
+    width: 0px;
+}
+ 
+.sildes li img {
+    padding:5px;
+}
+.footer{
+	width:100%;
+	float:left;
+}
+.footerBody{
+	width:980px;
+	margin:0 auto;
+}
+span{
+    float: left;
+    margin: 10px 0 10px 330px;
+}

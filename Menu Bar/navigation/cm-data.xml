@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<menuinfo>
+   <menu>
+     <menu url="http://cssmenu.com/sample/page.htm" lbTxt="My Menu">
+       <item url="http://cssmenu.com/sample/page.htm" lbTxt="My sub menu item 1"/>
+       <item url="http://cssmenu.com/sample/page.htm" lbTxt="My sub menu item 2"/>
+       <item url="http://cssmenu.com/sample/page.htm" lbTxt="My sub menu item 3"/>
+     </menu>
+     <item url="http://cssmenu.com/sample/page.htm" lbTxt="My Item"/>		
+   </menu>		
+</menuinfo>

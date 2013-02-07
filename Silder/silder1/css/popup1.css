@@ -1,0 +1,41 @@
+body {
+font-family:verdana;
+font-size:15px;
+}
+
+#mask {
+  position:absolute;
+  left:0;
+  top:0;
+  z-index:9000;
+  background-color:#000;
+  display:none;
+}
+  
+#boxes .window {
+  position:fixed;
+  left:0;
+  top:0;
+  width:440px;
+  display:none;
+  z-index:9999;
+  padding:20px;
+}
+
+#boxes #dialog {
+  width:500px;
+  padding:10px;
+  background-color: white;
+}
+
+#boxes #dialog1 {
+  width:500px;
+  padding:10px;
+  background-color: white;
+}
+
+#boxes #dialog2 {
+  width:500px;
+  padding:10px;
+  background-color: white;
+}
