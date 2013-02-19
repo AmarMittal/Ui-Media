@@ -1,0 +1,290 @@
+/* 
+    Document   : style1
+    Created on : Sep 27, 2012, 12:54:05 PM
+    Author     : AMAR MITTAL
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* Reset Css Start */
+body, div, h1, h2, h3, h4, h5, h6, p, blockquote, pre, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, th, td, article, aside, figure, footer, header, hgroup, menu, nav, section {
+    margin:0;
+    padding:0;
+
+}
+html {
+    height:100%;/*-webkit-text-size-adjust:100%;
+-ms-text-size-adjust:100%;*/
+}
+
+a img {
+    border:none;
+}
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+/* tables still need cellspacing="0" in the markup */
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+hr {
+    display:block;
+    height:1px;
+    border:0;
+    border-top:1px solid #ccc;
+    margin:1em 0;
+    padding:0;
+}
+input, select {
+    vertical-align:middle;
+    margin:0;
+}
+h1 {
+    font-size: 40px;
+    color: #000;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Eras Medium ITC', Arial, sans-serif;
+    font-weight: normal;
+}
+h2 {
+    font-size: 19px;
+    color: #888888;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Candara', Arial, sans-serif;
+
+}
+b, strong {
+    font-weight:bold;
+}
+abbr[title] {
+    border-bottom:1px dotted;
+}
+.unit {
+    float: left;
+}
+.unitExt {
+    float: right;
+}
+
+/* Reset Css Closed */
+/* Page Start Here */
+.page
+{
+    width:100%;
+    margin: 0 auto;
+}
+/* Header Start Here */
+.header
+{
+    width:100%;
+    background: url("../image/bodyBg.jpg") repeat-x; 
+    float: left;
+}
+.headercontent
+{
+    width:820px;
+    margin:0 auto;
+}
+/* Logo Start Here */
+.logo
+{
+    width: 112px;
+    float: left;
+    padding: 0px;
+    background: url("../image/Logo.png") no-repeat;
+    margin: 16px 0 30px;
+    padding: 0px;
+}
+.logo h1
+{
+    text-indent: -10000px;
+}
+.logo h1 a {
+    width:112px;
+    float:left;
+}
+/* Navigation Start Here */
+.navigation
+{         
+    width:315px;
+    float:right;
+    margin: 16px 0 0;
+    padding: 0px;
+    font-family: 'Eras Medium ITC', Arial, sans-serif;
+}
+.navigation ul
+{
+    list-style:none;
+    padding:0px;
+    margin:0px;
+}
+.navigation li
+{
+    float: left;
+}
+.navigation a 
+{
+    color:#797977;
+    font-size:11px;
+    text-decoration:none;
+    padding: 4px 22px;
+    display:block;
+}
+.navigation li a:hover, .navigation ul li a.active 
+{
+    background:url("../image/hover.png") no-repeat;
+    color:#fff;
+}
+/* Silder Start Here */
+.silder
+{
+    float: left;
+    margin:2px 0px 0px 0px;
+}
+/* Header End Here */
+/* Content Start Here */
+.content{
+    width:100%;
+    background: url("../image/contentbg.png") repeat-x;
+    float:left;
+}
+.contentbody
+{
+    width:820px;
+    margin: 0 auto;
+}
+/* Top Pennel Start Here */
+.toppannel
+{
+    width:820px;
+    float:left;
+    margin-top: 50px;
+}
+.toppannel p
+{font-size: 11px;
+ color:#a2a1a1;
+ margin-top: 25px;
+}
+/* Bottom Pannel Start Here */
+.bottompannel
+{
+    width:820px;
+    float:left;
+    margin-top:50px;
+}
+.left{
+    width:270px;
+    float:left;
+    margin-bottom: 50px;
+}
+.left a {
+    float: left;
+    width: 100px;
+    padding: 10px 0px;
+    font-family: 'Myriad Pro', Arial, sans-serif;
+    font-size: 12px;
+    color:#8f8e8e;
+}
+.left p{font-size: 12px;
+        font-family: 'Myriad Pro', Arial, sans-serif;
+        margin: 0px;
+        padding: 0px;
+        float: left;
+        color:#8f8e8e;}
+.middle
+{
+    width:270px;
+    float:left;
+    margin-bottom: 50px;
+}
+.last
+{
+    width:270px;
+    float:left;
+}
+.leftheader 
+{
+    float: left;
+}
+.feature 
+{
+    float: left;
+    width: 270px;
+}
+.feature ul 
+{
+    list-style: none;
+}
+.feature li 
+{
+    float: left;
+    margin: 10px 0 0;
+}
+.feature img 
+{
+    float: left;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+.feature p 
+{
+    padding: 0px;
+    margin: 0px;
+    width: 220px;
+    float: left;
+    color:#8f8e8e;
+    font-size: 12px;
+    font-family: 'Myriad Pro', Arial, sans-serif;
+}
+.image
+{
+    float:left;margin-top: 3px;
+}
+.title
+{
+    text-transform: capitalize;
+    float:left;
+    margin:3px 0px 0px 5px;
+}
+.right
+{
+    width: 270px;
+    float: left;
+    margin-bottom: 50px;
+}
+/* Content End Here */
+/* Footer Start Here */
+.footer
+{
+    width:100%;
+    background:#303123;
+    float:left;
+}
+.footerbody
+{
+    width:820px;
+    margin: 0 auto;  
+    min-height: 60px
+}
+.footerbody img
+{
+    width: 100px;
+    float: left;
+    margin-top:10px;
+}
+.footerbody p {
+    float: left;
+    width: 700px;
+    color:#fff;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    margin: 15px 0 10px 10px;
+}
+/* Footer End Here */
+
+
+

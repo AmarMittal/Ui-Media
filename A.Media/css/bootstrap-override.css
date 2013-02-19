@@ -2,16 +2,15 @@ body{
     background: url("../images/bodyBG.jpg") repeat-x #eeeff1;
     margin: 0px; color:#666;
     font-family: "Arial Rounded MT Bold",arial,helvetica,sans-serif;
- }
-  body {
-    padding-right: 0px;
-    padding-left: 0px;
 }
  .pullButtom{
     margin-bottom: 0px
 }
 .span4{
     width: 286px;
+}
+.span3{
+    width:208px;
 }
 .logo{
     padding: 15px 0px 0px;
@@ -128,6 +127,24 @@ a.btn{float: left;}
     min-height: 28px; 
     color: #fff; 
     border: solid 1px #4bbbe5
+}
+
+.business .btndownload {
+    background: url("../images/read.jpg") repeat-x scroll 0 0 transparent;
+    border: 1px solid #4BBBE5;
+    color: #FFFFFF;
+    float: right;
+    min-height: 28px;
+    width: 100px;
+    float: left;
+}
+.business .btnPreview {
+    background: url("../images/read.jpg") repeat-x scroll 0 0 transparent;
+    border: 1px solid #4BBBE5;
+    color: #FFFFFF;
+    float: right;
+    min-height: 28px;
+    width: 100px;
 }
 footer{
     background: #fff url("../images/footer.jpg") repeat-x;
